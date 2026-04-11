@@ -78,11 +78,7 @@ The KB is split into two destinations based on audience and sensitivity:
     └── testing/
         ├── testing-overview.md
         ├── api-testing-guide.md
-<<<<<<< HEAD
         └── ml-model-testing.md 
-=======
-        └── ml-model-testing.md
->>>>>>> 98ea5c5420f84fb0fd55bfea407ec09581da09bf
 ```
 
 ---
@@ -106,19 +102,11 @@ The KB is split into two destinations based on audience and sensitivity:
 
 ---
 
-<<<<<<< HEAD
 ## Tech Stack
 
 | Layer | Technology |
 |---|---|
 | Frontend | Web App, React Native / TypeScript |
-=======
-## Tech Stack (System Being Documented)
-
-| Layer | Technology |
-|---|---|
-| Frontend | Web App, React Native (Expo) / TypeScript |
->>>>>>> 98ea5c5420f84fb0fd55bfea407ec09581da09bf
 | Backend | Flask (Python), Gunicorn/WSGI |
 | Database | PostgreSQL (Cloud SQL), Redis (Memorystore) |
 | ML Models | XGBoost, Logistic Regression, Isolation Forest, Time-Series |
@@ -134,14 +122,6 @@ The KB is split into two destinations based on audience and sensitivity:
 ## Writing Guidelines
 
 ### Audience
-<<<<<<< HEAD
-- **docs** - Written for technically literate employees and HR. Assume familiarity with SaaS tools but not with infrastructure or ML internals. Link to Glossary when technical terms are unavoidable.
-- **Internal Wiki** - Written for developers, ML engineers, and DevOps. Assuming full technical proficiency. Included code snippets, schema definitions, config examples and command references.
-
-
-
-### Doc Status Labels
-=======
 - **docs** - Written for technically literate employees and HR. Assume familiarity with SaaS tools but not with infrastructure or ML internals. Avoid jargon; link to Glossary when technical terms are unavoidable.
 - **Internal Wiki** - Written for developers, ML engineers, and DevOps. Assume full technical proficiency. Include code snippets, schema definitions, config examples, and command references.
 
@@ -155,7 +135,6 @@ The KB is split into two destinations based on audience and sensitivity:
 ### Doc Status Labels
 Use the following front-matter status tags in each document:
 
->>>>>>> 98ea5c5420f84fb0fd55bfea407ec09581da09bf
 ```
 status: draft | review | published | deprecated
 last-updated: YYYY-MM-DD
@@ -172,8 +151,6 @@ owner: [team or person]
 4. Assign review to the relevant owner (HR, Engineering, or DevOps lead).
 5. On approval, merge and update `last-updated` in the document front matter.
 
-<<<<<<< HEAD
-=======
 ### Adding a New Document
 - Place it in the correct folder based on the audience split above.
 - Add it to the structure table in this README.
@@ -181,28 +158,8 @@ owner: [team or person]
 
 ---
 
-## Key Contacts
-
-| Role | Responsible For |
-|---|---|
-| Technical Writer | Overall KB structure, docs content |
-| Backend Lead | API reference, system architecture docs |
-| ML Engineer | ML models reference, optimization, chatbot architecture |
-| DevOps Lead | Deployment, CI/CD, monitoring docs |
-| HR Lead | Employee/manager user guides, FAQs |
-
->>>>>>> 98ea5c5420f84fb0fd55bfea407ec09581da09bf
----
-
 ## Related Resources
-
-<<<<<<< HEAD
-- **API Spec:** `docs-site/api-reference/api-reference.md` - OpenAPI 3.0 spec for all backend endpoints.
-- **Glossary:** `docs-site/reference/glossary.md` - Definitions for all system-specific and ML/AI terms.
-- **Release Notes:** `docs-site/reference/release-notes.md` - Version history and changelog.
-=======
-- **Source Document:** `Final_Draft_Attendance_Tracking.docx` - Original system design draft this KB is based on.
-- **API Spec:** `docs-site/api-reference/api-reference.md` - OpenAPI 3.0 spec for all backend endpoints.
-- **Glossary:** `docs-site/reference/glossary.md` - Definitions for all system-specific and ML/AI terms.
-- **Release Notes:** `docs-site/reference/release-notes.md` - Version history and changelog.
->>>>>>> 98ea5c5420f84fb0fd55bfea407ec09581da09bf
+- **Source Document:** - Original system design draft this KB is based on.
+- **API Spec:** - OpenAPI 3.0 spec for all backend endpoints.
+- **Glossary:** - Definitions for all system-specific and ML/AI terms.
+- **Release Notes:**- Version history and changelog.
