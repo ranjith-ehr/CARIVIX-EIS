@@ -1,4 +1,4 @@
-11. common-errors.md
+10. common-errors.md
 
 + Error table format: Error Code / Message / Module / Likely Cause / Resolution Steps
 + Check-in failures: Login Issues, session expired
@@ -9,7 +9,7 @@
 
 ---
 
-12. faq-employees.md
+11. faq-employees.md
 
 + Why was I marked absent when I checked in?
 - Why is my attendance percentage lower than expected?
@@ -19,7 +19,7 @@
 
 ---
 
-13. faq-admins.md
+12. faq-admins.md
 
 - How do I configure the late login threshold?
 - What triggers an anomaly alert and how do I dismiss a false positive?
