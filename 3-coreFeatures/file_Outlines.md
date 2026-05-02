@@ -1,14 +1,3 @@
-09. attendance-tracking.md
-
-- Data captured per session: login time, logout time
-- Attendance status logic: Present / Absent / Late / Half-day rules
-- Work hour calculation formula: Logout − Login
-- Late login detection: threshold config and flagging logic
-- Idle time identification: activity gap rules
-- Edge cases: missed logout, duplicate records, timezone handling
-
----
-
 7. performance-scoring.md
 
 - Score components: attendance rate, work hours, late login count, idle time, overtime
@@ -28,3 +17,16 @@
 - Report types: Daily Summary, Weekly Attendance, Monthly Performance, Anomaly Report
 - Export formats: CSV, PDF
 - Scheduled report configuration: frequency, recipients, format
+
+---
+
+09. attendance-tracking.md
+
+- Data captured per session: login time, logout time
+- Attendance status logic: Present / Absent / Late / Half-day rules
+- Work hour calculation formula: Logout − Login
+- Late login detection: threshold config and flagging logic
+- Idle time identification: activity gap rules
+- Edge cases: missed logout, duplicate records, timezone handling
+
+---
