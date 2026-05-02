@@ -9,7 +9,7 @@
 
 ---
 
-12. performance-scoring.md
+7. performance-scoring.md
 
 - Score components: attendance rate, work hours, late login count, idle time, overtime
 - Weighting and normalization method
@@ -20,7 +20,7 @@
 
 ---
 
-15. dashboards-and-reports.md
+8. dashboards-and-reports.md
 
 - Dashboard types: Employee Personal, Admin System
 - Available widgets: attendance heatmap, work hour trend, anomaly count, performance distribution
