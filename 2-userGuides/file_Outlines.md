@@ -8,7 +8,7 @@
 
 ---
 
-06. admin-user-guide.md
+05. admin-user-guide.md
 - Admin panel overview
 - Creating and managing user accounts and roles
 - Setting global attendance rules (work hours, late login threshold)
@@ -18,7 +18,7 @@
 
 ---
 
-07. mobile-app-guide.md
+06. mobile-app-guide.md
 - Installing the app (iOS / Android)
 - Granting required device permissions
 - Login and biometric session setup
