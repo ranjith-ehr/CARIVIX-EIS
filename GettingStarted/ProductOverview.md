@@ -1,7 +1,7 @@
 ---
 title: Product Overview
 status: published
-last-updated: 2026-04-11
+last-updated: 2026-05-04
 owner: Technical Writer
 ---
 
@@ -17,8 +17,7 @@ Unlike traditional attendance tools that only record presence or absence, this s
 
 | Role | What They Use It For |
 |---|---|
-| **Employee** | Check in/out, view personal attendance and performance data, query the chatbot |
-| **Manager** | Monitor team attendance, review anomaly alerts, access predictive reports |
+| **Employee** | Check in/out, view personal attendance and performance data, query |
 | **Admin** | Configure system rules, manage users, geofences and schedules |
 
 ---
@@ -26,13 +25,10 @@ Unlike traditional attendance tools that only record presence or absence, this s
 ## Core Capabilities
 
 ### Attendance Recording
-Captures login and logout timestamps, GPS location and face verification data for every session. Attendance status (Present, Absent, Late, Half-day) is calculated automatically based on configured rules.
+Captures login and logout timestamps, GPS location and data for every session. Attendance status (Present, Absent, Late, Half-day) is calculated automatically based on configured rules.
 
-### Face Recognition
-Verifies employee identity at check-in using facial embeddings. Enrollment will completed during onboarding and subsequent check-ins are verified in real time.
-
-### GIS Location Validation
-Validates that employees are physically present within approved office zones using GPS geofencing. Flags location anomalies such as check-ins from outside the zone or simultaneous logins from different locations.
+### GIS Location Access
+Validates that employees are physically present within approved office zones using GPS. Flags location anomalies such as check-ins from outside the zone or simultaneous logins from different locations.
 
 ### Performance Scoring
 Generates a performance score per employee based on attendance consistency, work hours, late login frequency and idle time. Scores are updated on a rolling basis and visible on the personal dashboard.
@@ -43,8 +39,6 @@ Generates a performance score per employee based on attendance consistency, work
 - **Employee Classification** - Categorizes employees as Consistent, Irregular, or High-Risk based on attendance trends.
 - **Trend Forecasting** - Predicts future team attendance levels to support workforce planning.
 
-### AI Chatbot
-A natural language assistant that allows employees and managers to query attendance data, work hour summaries, task logs and performance insights conversationally - without navigating reports manually.
 
 ### Dashboards and Reports
 Real-time dashboards display attendance heatmaps, work hour trends, anomaly counts and performance distributions. Reports can be generated on demand or scheduled for automated delivery.
@@ -78,8 +72,6 @@ PostgreSQL (Cloud SQL) + Redis (Memorystore)
 | Backend | Flask (Python), Gunicorn |
 | Mobile App | React Native (Expo), TypeScript |
 | ML Models | XGBoost, Logistic Regression, Isolation Forest |
-| Chatbot | LLaMA 3 / Mistral, DistilBERT, spaCy, LangChain |
-| Face Recognition | Deep learning model on GPU Compute Engine |
 | Cloud Platform | Google Cloud Platform |
 | Database | PostgreSQL, Redis |
 
