@@ -15,7 +15,7 @@ This document lists the most common errors encountered across the system, organi
 
 | Error Code | Message | Likely Cause | Resolution |
 |---|---|---|---|
-| `INVALID_CREDENTIALS` | Email or password is incorrect. | Wrong email or password entered. | Re-enter credentials. Use **Forgot Password** if needed. |
+| `INVALID_CREDENTIALS` | Email or password is incorrect. | Wrong email or password entered. | Re-enter credentials. |
 | `TOKEN_EXPIRED` | Your session has expired. Please log in again. | JWT token has passed the 8-hour expiry. | Log in again or use the token refresh endpoint. |
 | `TOKEN_INVALID` | Authentication token is invalid. | Token is malformed or was used after logout. | Log in again to obtain a new token. |
 | `ACCOUNT_LOCKED` | Your account has been locked after multiple failed login attempts. | 5 or more consecutive failed login attempts. | Contact your administrator to unlock the account. |
@@ -31,21 +31,6 @@ This document lists the most common errors encountered across the system, organi
 | `NO_ACTIVE_CHECKIN` | No active check-in found for today. | Check-out attempted without a prior check-in. | Contact your manager to log a manual attendance record. |
 | `GPS_TIMEOUT` | Location could not be determined. Please check your GPS settings. | GPS lock failed - device location services may be off or signal is poor. | Enable precise location permission. Move closer to a window and retry. |
 | `SESSION_INCOMPLETE` | Your previous session was not properly closed. | A prior check-in has no corresponding check-out. | Contact your manager or HR to correct the open session. |
-
----
-
-## API Errors
-
-| HTTP Status | Error Code | Message | Cause | Resolution |
-|---|---|---|---|---|
-| `400` | `BAD_REQUEST` | The request could not be understood. | Malformed JSON body or invalid parameter type. | Review the request body against the API reference. |
-| `401` | `UNAUTHORIZED` | Authentication required. | Missing or invalid `Authorization` header. | Include a valid Bearer token in the request header. |
-| `403` | `FORBIDDEN` | You do not have permission to perform this action. | Authenticated user's role does not have access. | Verify the required role for the endpoint in the API reference. |
-| `404` | `NOT_FOUND` | The requested resource was not found. | Invalid record ID or resource does not exist. | Confirm the ID is correct. |
-| `422` | `VALIDATION_ERROR` | One or more fields failed validation. | Missing required fields or field format mismatch. | Check the `details` field in the response for field-level errors. |
-| `429` | `RATE_LIMIT_EXCEEDED` | Too many requests. Please wait before retrying. | Exceeded 60 requests/minute per user. | Back off and retry after the time indicated in `X-RateLimit-Reset`. |
-| `500` | `INTERNAL_SERVER_ERROR` | An unexpected error occurred. Please try again. | Unhandled server-side exception. | Retry after a few seconds. If persistent, contact your administrator. |
-
 
 ---
 
@@ -75,6 +60,5 @@ This document lists the most common errors encountered across the system, organi
 
 ## Related Docs
 
-- [FAQ - Employees](./faq-employees.md)
-- [FAQ - Admins](./faq-admins.md)
-- [API Reference](../api-reference/api-reference.md)
+- [FAQ - Employees](FAQ-Employees.md)
+- [FAQ - Admins](FAQ-Admins.md)

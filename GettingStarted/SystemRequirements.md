@@ -22,7 +22,6 @@ Before using the Attendance Tracking system, verify that your device, browser, a
 | Microsoft Edge | 110+ | Chromium-based only |
 | Safari | 16+ | macOS and iOS |
 
-> **Note:** Internet Explorer is not supported.
 
 ### Operating System
 

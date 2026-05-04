@@ -113,8 +113,7 @@ The performance score is generated automatically from recorded attendance data. 
 
 **What data does the system store about me?**
 
-The system records: attendance check-in/out timestamps, GPS coordinates at check-in, face verification results (not raw photos), task logs, work hours, performance scores, and anomaly flags. See [Data Privacy and Security](../reference/data-privacy-and-security.md) for the full data inventory and retention policy.
-
+The system records: attendance check-in/out timestamps, GPS coordinates at check-in, face verification results (not raw photos), task logs, work hours, performance scores and anomaly flags. 
 ---
 **How do I keep my account secure?**
 Use a strong password (mix of letters, numbers, symbols)
@@ -131,7 +130,5 @@ Go to **Profile → Settings → Change Password**. Enter your current password 
 
 ## Related Docs
 
-- [Employee User Guide](../user-guides/employee-user-guide.md)
-- [Common Errors](./common-errors.md)
-- [Performance Scoring](../features/performance-scoring.md)
-- [Data Privacy and Security](../reference/data-privacy-and-security.md)
+- [Employee User Guide](../UserGuides/EmployeeUserGuide.md)
+- [Common Errors](../Troubleshooting&FAQs/CommonErrors.md)

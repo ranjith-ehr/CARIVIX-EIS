@@ -141,7 +141,5 @@ Yes. When generating a report, apply the **Department** filter before clicking *
 
 ## Related Docs
 
-- [Admin User Guide](../user-guides/admin-user-guide.md)
-- [Anomaly Detection](../features/anomaly-detection.md)
-- [Common Errors](./common-errors.md)
-- [Data Privacy and Security](../reference/data-privacy-and-security.md)
+- [Admin User Guide](FAQ-Admins.md)
+- [Common Errors](CommonErrors.md)
