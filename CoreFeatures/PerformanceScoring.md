@@ -1,7 +1,7 @@
 ---
 title: Performance Scoring
-status: published
-last-updated: 2026-05-02
+status: Review
+last-updated: 2026-05-04
 owner: Technical Writer
 ---
 

@@ -48,4 +48,4 @@ owner: [team or person]
 ---
 
 ## Related Resources
-- **Release Notes:**- Version history and changelog.
+- [**Release Notes:**](ReleaseNotes.md)- Version history and changelog.

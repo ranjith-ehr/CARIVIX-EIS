@@ -1,6 +1,6 @@
 ---
 title: Mobile App Guide
-status: published
+status: Review
 last-updated: 2026-05-04
 owner: Technical Writer
 ---
