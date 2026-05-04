@@ -106,12 +106,3 @@ The mobile app requires the following permissions to be granted before first use
 - Devices without a front-facing camera
 - Devices without GPS (check-in requires location access)
 
-<<<<<<< HEAD
-=======
----
-
-## Next Steps
-
-- [Quick Start Guide](../1-Getting%20Started/3.%20quick-start-guide.md) - Set up your account and complete your first check-in.
-- [Mobile App Guide](../2-userGuides/7.%20mobile-app-guide.md) - Step-by-step mobile installation and permission setup.
->>>>>>> f2070ddc19a4eecb6e21696ab94c0633cecbd09b
