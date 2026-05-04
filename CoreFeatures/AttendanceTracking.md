@@ -54,46 +54,22 @@ Work Hours = Logout Time − Login Time
 
 This is a gross duration - it does not subtract breaks unless idle time tracking is configured to exclude gap periods exceeding the idle time threshold.
 
-### Daily Work Hour Aggregation
-If an employee has multiple sessions in a single day (e.g., left and returned), all session durations are summed:
-
-```
-Total Daily Hours = Sum of all (Logout − Login) for sessions on that date
-```
-
 ---
 
-## Late Login Detection
-
-A login is flagged as **Late** when:
-
-```
-Login Time > (Work Start Time + Late Login Threshold)
-```
-
-**Example:** Work Start Time = 09:00, Late Threshold = 15 minutes → any login after 09:15 is Late.
-
-Late logins are:
-- Reflected in the employee's daily status.
-- Counted in the Late Login component of their performance score.
-- Visible to managers in the team attendance table and exportable in reports.
-
----
 
 ## Idle Time Detection
 
-Idle time is identified when no activity event is recorded for a period exceeding the configured idle threshold (default: 30 minutes).
+Idle time is identified when no activity event is recorded for a period exceeding the configured idle threshold.
 
 Idle time affects:
 - The employee's session activity log.
 - The Idle Time component of the performance score.
-- Anomaly detection (excessive idle periods may trigger a flag).
 
 > Activity events are captured from task logs and system interactions recorded during the session.
 
 ---
 
-## Attendance Rate Calculation
+## Attendance Rate Calculation  
 
 The attendance rate is computed as:
 
@@ -104,24 +80,3 @@ Attendance Rate (%) = (Days Present / Total Working Days) × 100
 - **Days Present** includes both Present and Late statuses.
 - **Total Working Days** excludes weekends and public holidays as configured by the admin.
 - The rate is calculated for the current calendar month by default and visible on the employee dashboard.
-
----
-
-## Edge Cases
-
-| Scenario | How It Is Handled |
-|---|---|
-| **Missed logout** | Session is flagged as incomplete; work hours cannot be calculated. HR or manager must correct the record manually. |
-| **Duplicate check-in** | The system deduplicates by retaining the first valid check-in for the day and discarding subsequent ones within a 15-minute window. |
-| **Timezone mismatch** | All timestamps are stored in UTC and converted to the employee's configured local timezone for display. |
-| **Public holiday check-in** | Recorded as an overtime session; does not affect attendance rate. |
-| **Weekend check-in** | Recorded but not counted toward attendance rate or performance score unless the employee is configured for weekend shifts. |
-
----
-
-## Related Docs
-
-
-- [Performance Scoring](./performance-scoring.md)
-- [Common Errors](../troubleshooting/common-errors.md)
-- [FAQ - Employees](../troubleshooting/faq-employees.md)
