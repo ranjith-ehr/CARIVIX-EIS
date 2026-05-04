@@ -1,13 +1,13 @@
 ---
 title: System Requirements
 status: published
-last-updated: 2026-04-11
+last-updated: 2026-05-04
 owner: Technical Writer
 ---
 
 # System Requirements
 
-Before using the Attendance Tracking system, verify that your device, browser, and network meet the requirements listed below. Both the web app and the mobile app have specific prerequisites to support face recognition, GPS validation, and real-time notifications.
+Before using the Attendance Tracking system, verify that your device, browser, and network meet the requirements listed below. Both the web app and the mobile app have specific prerequisites to support GPS Access, and real-time notifications.
 
 ---
 
@@ -36,7 +36,6 @@ Before using the Attendance Tracking system, verify that your device, browser, a
 
 | Component | Requirement |
 |---|---|
-| Front-facing Camera | Required for face verification |
 | RAM | 4 GB minimum, 8 GB recommended |
 | Display Resolution | 1280 × 720 minimum |
 
@@ -57,19 +56,16 @@ The mobile app requires the following permissions to be granted before first use
 
 | Permission | Purpose |
 |---|---|
-| **Camera** | Face verification at check-in |
-| **Location (Precise)** | GPS-based geofence validation |
+| **Location (Precise)** | GPS-based location access |
 | **Notifications** | Attendance alerts and reminders |
-| **Biometric / Face ID** | Secure session authentication (optional but recommended) |
 
-> Denying Camera or Location permissions will prevent check-in from completing. See [Mobile App Guide](../2-userGuides/7.%20mobile-app-guide.md) for instructions on granting permissions after installation.
+
 
 ### Hardware (Mobile)
 
 | Component | Requirement |
 |---|---|
-| Front-facing Camera | Required - minimum 5 MP |
-| GPS Chip | Required for location validation |
+| GPS Chip | Required for location Access |
 | Storage | 150 MB free space for app installation |
 
 ---
@@ -108,11 +104,5 @@ The mobile app requires the following permissions to be granted before first use
 - Android versions below 11
 - iOS versions below 15
 - Devices without a front-facing camera
-- Devices without GPS (check-in requires location validation)
+- Devices without GPS (check-in requires location access)
 
----
-
-## Next Steps
-
-- [Quick Start Guide](../1-Getting%20Started/3.%20quick-start-guide.md) - Set up your account and complete your first check-in.
-- [Mobile App Guide](../2-userGuides/7.%20mobile-app-guide.md) - Step-by-step mobile installation and permission setup.
