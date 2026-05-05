@@ -1,0 +1,94 @@
+---
+title: Admin User Guide
+status: Review
+last-updated: 2026-05-04
+owner: Technical Writer
+---
+
+# Admin User Guide
+
+This guide covers all administrator functions - user and role management, attendance rule setup and audit log access.
+
+---
+
+## Admin Panel Overview
+
+Admins access the **Admin Panel** from the top navigation bar → **Admin Console**. The panel is only visible to accounts with the Admin role.
+
+| Panel Section | Purpose |
+|---|---|
+| **User Management** | Create, edit, deactivate user accounts and assign roles |
+| **Attendance Rules** | Set work hour expectations, late login thresholds and half-day rules |
+| **Audit Logs** | Access a full log of system and user actions |
+
+---
+
+## Managing User Accounts
+
+### Creating a User
+1. Go to **Admin Console → Users → Add User**.
+2. Fill in: Full Name, Email, Mobile number, Department, Role (Employee / Admin).
+3. Click **Create**. The system sends a welcome email with a deafult password and enrollment instructions.
+
+### Editing a User
+1. Search for the user by name or email in the Users table.
+2. Click **Edit** on the user row.
+3. Update fields as needed (name, department and role).
+4. Click **Save Changes**.
+
+### Deactivating a User
+1. Open the user's profile.
+2. Click **Delete Account**.
+3. Confirm the action. The account is immediately locked, historical data is retained.
+
+> Deactivated accounts cannot log in and their attendance and performance records will also be inaccessible in reports and audit logs.
+
+### Role Permissions Summary
+
+| Permission | Employee |   Admin |
+|---|---|---|
+| View own attendance | ✅ | ✅ |
+| View team attendance | ❌ |  ✅ |
+| Manage users and roles | ❌ |  ✅ |
+| Configure attendance rules | ❌ |  ✅ |
+| Access audit logs | ❌ |  ✅ |
+
+---
+
+
+## Setting Attendance Rules
+
+1. Go to **Admin Console → Attendance Rules**.
+2. Configure the following parameters:
+
+| Rule | Description | Default |
+|---|---|---|
+| **Work Start Time** | Expected login time | 09:00 |
+| **Late Login Threshold** | Minutes after Work Start Time before a login is marked Late | 15 min |
+| **Minimum Work Hours (Full Day)** | Hours required for a Present (full day) status | 8 hours |
+| **Minimum Work Hours (Half Day)** | Hours required for a Half-Day status | 4 hours |
+| **Idle Time Threshold** | Minutes of inactivity before idle time is logged | 30 min |
+| **Working Days** | Which days of the week are counted as working days | Mon–Fri |
+
+3. Click **Save Rules**. Rules apply globally unless overridden at the department level.
+
+
+---
+
+## Accessing Audit Logs
+
+Audit logs record all significant system and user actions.
+
+1. Go to **Admin Console → Audit Logs**.
+2. Filter by: Date Range, User, Action Type, Module.
+3. Action types logged include:
+
+| Action Type | Examples |
+|---|---|
+| Authentication | Login, logout, failed login attempts, password resets |
+| User Management | Account creation, role changes, deactivation |
+| Attendance | Manual attendance corrections, status overrides |
+
+4. Export logs as CSV for compliance reporting.
+
+> Audit logs are retained for **12 months** by default. Contact your DevOps team to adjust the retention period.

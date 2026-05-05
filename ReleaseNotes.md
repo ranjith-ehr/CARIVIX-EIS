@@ -1,0 +1,45 @@
+---
+title: Release Notes
+status: Review
+last-updated: 2026-05-04
+owner: Technical Writer
+---
+
+# Release Notes
+
+Version history for the AI-Based Attendance Tracking and Employee Management System. Releases are listed in chronological order.
+
+Each release entry covers: new features, improvements, bug fixes, breaking changes, and migration notes where applicable.
+
+---
+
+## v1.0.0 - 2026-05-02
+
+### Initial Release
+
+Core platform launch including:
+
+- Attendance check-in and check-out with location capturing.
+- Attendance status calculation: Present, Late, Half-Day, Absent.
+- Work hour calculation and idle time detection.
+- Performance scoring (composite metric: attendance rate, work hours, late logins, idle time, overtime).
+- Employee personal dashboard and admin monitoring dashboard.
+- Daily, Weekly and Monthly report generation with CSV and PDF export.
+
+---
+
+## Versioning Policy
+
+| Version Segment | When It Increments |
+|---|---|
+| **Major (X.0.0)** | Breaking changes that require client-side migration |
+| **Minor (0.X.0)** | New features added in a backward-compatible manner |
+| **Patch (0.0.X)** | Backward-compatible bug fixes |
+
+---
+
+## Support Policy
+
+| Version | Support Status |
+|---|---|
+| v1.0.x | Active - current release |
